@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A6B3BD"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imgReg"
+            android:layout_width="179dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Last Name, First Name Middle Name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/imgReg"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="4dp"
+            android:text="Weight (kg)"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="468dp"
+            android:layout_marginLeft="468dp"
+            android:text="123"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:text="Height (m)"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:text="Sex"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:text="Date of Birth"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/sx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginLeft="41dp"
+            android:text="M"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/ntl"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Nationality"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/imgReg"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="2000/01/24"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/sx"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Address"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/imgReg"
+            app:layout_constraintTop_toBottomOf="@+id/ntl"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/mts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="544dp"
+            android:layout_marginLeft="544dp"
+            android:text="123"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/ntl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="PHL"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imgReg"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="LastName, First Name Middle name"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/imgReg"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/ads"
+            android:layout_width="337dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="ADDRESS "
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/imgReg"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="88dp"
+            android:text="Signature of License"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgReg"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="36dp"
+            android:text="Eye Color"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/bdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="224dp"
+            android:layout_marginLeft="224dp"
+            android:layout_marginTop="8dp"
+            android:text="AB+"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="204dp"
+            android:layout_marginLeft="204dp"
+            android:layout_marginTop="36dp"
+            android:text="Blood Type"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/eyec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="144dp"
+            android:layout_marginLeft="144dp"
+            android:layout_marginTop="8dp"
+            android:text="Black"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/bdt"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="8dp"
+            android:text="Conditions"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/eyec"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="340dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="92dp"
+            android:text="Assistant Secretary"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView31"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="204dp"
+            android:layout_marginLeft="204dp"
+            android:layout_marginTop="8dp"
+            android:text="Restrictions"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bdt"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="4dp"
+            android:text="License No."
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ads"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="4dp"
+            android:text="Agency"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/ads"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="4dp"
+            android:text="Expiraration Date"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/ads"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/submitprev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
